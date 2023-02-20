@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>樱花飘落效果</title>
+      <link href="/2022/07/09/%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/"/>
+      <url>/2022/07/09/%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/</url>
+      
+        <content type="html"><![CDATA[<h1>樱花飘落效果</h1><script src="https://cdn.sboxm.com/hexo/sakura.js"></script><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="https://img1.imgtp.com/2022/07/09/8GdWKplw.png" alt="1.png"></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.sboxm.com/hexo/sakura.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 经验分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>手动清理C盘工具-SpaceSniffer</title>
+      <link href="/2022/06/27/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86C%E7%9B%98%E5%B7%A5%E5%85%B7-SpaceSniffer/"/>
+      <url>/2022/06/27/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86C%E7%9B%98%E5%B7%A5%E5%85%B7-SpaceSniffer/</url>
+      
+        <content type="html"><![CDATA[<div style="margin: 0 auto;text-align: center;"><h1>手动清理C盘工具-SpaceSniffer</h1></div><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><style type="text/css">            p{                font-size: 20px;            }</style><p>SpaceSniffer是Windows上一款以块状树平铺直观展现磁盘空间占用情况的软件，使用简单，功能直击痛点，而且大小仅2.20MB。</p><p>由于是绿色软件，下载解压后无需安装，点击SpaceSniffer.exe即可运行</p><p><img src="https://i-s2.328888.xyz/2022/06/27/62b98a12db3ec.png" alt="465.png"></p><p>运行后弹出窗口选择需要分析的盘符，此时你可以点击选择某个盘符，或按住「ctrl」同时点选多个盘符，也可以点击「Path：」选择指定文件夹。点击「Start」后SpaceSniffer会以极快的速度检索磁盘。</p><p><img src="https://i-s2.328888.xyz/2022/06/27/62b98a8eb954a.png" alt="5.png"></p><p>扫描完毕后眼前呈现的大大小小的块块就是各个文件夹的空间占用情况了；此时可能弹出日志报告窗口，原因在于某些文件夹无访问权限。你可以很直观地一眼洞穿是哪些文件夹占用了过大的磁盘空间</p><p>此时对于某些体积庞大的文件夹，你可以点击显示下一级文件夹，一探究竟，或者调整总体显示精度。当然你也可以利用强大便捷的「Filter」过滤器设定筛选条件，比如设定「>50mb」SpaceSniffer会过滤掉<=50MB的文件夹；设定「 <3months」可以找出3个月内的文件夹等；更多筛选规则可通过「help」→「filteringhelp」查看。动图封面筛选过后，最后一步当然是删除了。</p><p><img src="https://i-s2.328888.xyz/2022/06/27/62b98b01a7967.png" alt="6.png"></p><p><img src="https://i-s2.328888.xyz/2022/06/27/62b98b003ad39.png" alt="9.png"></p><h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a href="https://cdn3.sboxm.com/bingfiles/SpaceSniffer.exe" style="font-size: 40px">直接下载</a><br /></p><p><a href="http://www.uderzo.it/main_products/space_sniffer/" style="font-size: 40px">SpaceSniffer官网</a><br /></p><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p style="color: red;font-size: 25px;">不是所有扫描出来的文件都可以删除，在你删除这些文件之前，你必须清楚这意味着什么，你可以通过百度搜索这些文件名获取有关信息来协助判断</p><hr><p>该软件来源于网络，如有侵犯您的合法权益，请联系<a href="mailto:&#x69;&#64;&#x73;&#98;&#x6f;&#120;&#109;&#x2e;&#x63;&#111;&#109;">&#x69;&#64;&#x73;&#98;&#x6f;&#120;&#109;&#x2e;&#x63;&#111;&#109;</a>删除</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 资源分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一个按钮样式</title>
+      <link href="/2022/04/24/%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F/"/>
+      <url>/2022/04/24/%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<center><h1>一个按钮样式</h1></center><h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><img src="https://s3.bmp.ovh/imgs/2022/04/24/8a7410d643639b6d.png"/><h2 id="CSS代码"><a href="#CSS代码" class="headerlink" title="CSS代码"></a>CSS代码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">button &#123;</span><br><span class="line"> text-decoration: none;</span><br><span class="line"> position: absolute;</span><br><span class="line"> border: none;</span><br><span class="line"> font-size: 14px;</span><br><span class="line"> font-family: inherit;</span><br><span class="line"> color: #fff;</span><br><span class="line"> width: 9em;</span><br><span class="line"> height: 3em;</span><br><span class="line"> line-height: 2em;</span><br><span class="line"> text-align: center;</span><br><span class="line"> background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);</span><br><span class="line"> background-size: 300%;</span><br><span class="line"> border-radius: 30px;</span><br><span class="line"> z-index: 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">button:hover &#123;</span><br><span class="line"> animation: ani 8s linear infinite;</span><br><span class="line"> border: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes ani &#123;</span><br><span class="line"> 0% &#123;</span><br><span class="line">  background-position: 0%;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> 100% &#123;</span><br><span class="line">  background-position: 400%;</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">button:before &#123;</span><br><span class="line"> content: &#x27;&#x27;;</span><br><span class="line"> position: absolute;</span><br><span class="line"> top: -5px;</span><br><span class="line"> left: -5px;</span><br><span class="line"> right: -5px;</span><br><span class="line"> bottom: -5px;</span><br><span class="line"> z-index: -1;</span><br><span class="line"> background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);</span><br><span class="line"> background-size: 400%;</span><br><span class="line"> border-radius: 35px;</span><br><span class="line"> transition: 1s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">button:hover::before &#123;</span><br><span class="line"> filter: blur(20px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">button:active &#123;</span><br><span class="line"> background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 经验分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>liveserver插件无法打开浏览器问题修复</title>
+      <link href="/2022/02/11/liveserver%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/"/>
+      <url>/2022/02/11/liveserver%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/</url>
+      
+        <content type="html"><![CDATA[<center><h1>liveserver插件无法打开浏览器问题修复</h1></center><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>vscode在使用liveserver插件测试网页时无法自动弹出浏览器</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>打开电脑设置，找到“关于”，打开高级系统设置<br><img src="https://ae01.alicdn.com/kf/H561119bb81dc4210a74c9a46c2384114N.png" alt="图片"></p><p>打开环境变量</p><p><img src="https://ae01.alicdn.com/kf/H19803ae34adb4176a9c20d6beb397284l.png" alt="图片"></p><p>找到Path点击编辑</p><p><img src="https://ae01.alicdn.com/kf/H05601bbdb6134fe1bd2e43436162b746b.png" alt="图片"></p><p>新增以下内容并保存</p><p><img src="https://ae01.alicdn.com/kf/He3c7a562ad8b4d4e92fe03eb6e5f9ac9w.png" alt="图片"></p><pre><code>C:\Program Files\Common Files\IntelWirelessCommon%SystemRoot%\system32%SystemRoot%%SystemRoot%\System32\Wbem%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\%SYSTEMROOT%\System32\OpenSSH\C:\Program Files (x86)]Intel\Intel® Processor Graphics</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 经验分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用Hexo和Github搭建个人博客</title>
+      <link href="/2022/02/08/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2022/02/08/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<center><h1>利用Hexo和Github搭建个人博客</h1></center><h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><ul><li><p>Windows7~</p></li><li><p>Linux Ubuntu</p></li><li><p>macOS</p></li></ul><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="下载git"><a href="#下载git" class="headerlink" title="下载git"></a>下载git</h4><p>git官网 <a href="https://git-scm.com/">https://git-scm.com/</a></p><p>Windows 下载地址 <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p><p>Linux 下载 </p><p><code># apt-get install git</code></p><p>macOS <a href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a></p><p><img src="https://ae01.alicdn.com/kf/H395a91678e364876acb4d8bf59c463cc6.png" alt="Windows下载截图"></p><p><img src="https://ae01.alicdn.com/kf/Hd8b1072979f04a8fa053e01b7f4d1212w.png" alt="Windows下载截图"></p><h4 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h4><p><strong>正常情况下一直点“NEXT”即可</strong></p><p>或见<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">图文教程</a></p><p><img src="https://ae01.alicdn.com/kf/Heba3fd2746634c1eb2e86c45e2e9a5733.png" alt="Windows安装截图"></p><h4 id="安装NodeJS"><a href="#安装NodeJS" class="headerlink" title="安装NodeJS"></a>安装NodeJS</h4><p>下载地址 <a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></p><p><img src="https://ae01.alicdn.com/kf/Hc6177704d7aa47078317e3e32b5a8897b.png" alt="Windows安装截图"></p><p><img src="https://ae01.alicdn.com/kf/H022852bfc430417aa41833279ade8cf7A.png" alt="Windows安装截图"></p><h4 id="git使用前配置"><a href="#git使用前配置" class="headerlink" title="git使用前配置"></a>git使用前配置</h4><p><strong>git使用提示：由于git的操作类似于Linux系统，所以无法使用Windows的快捷键对命令进行复制粘贴！！需要复制粘贴请使用鼠标右键菜单</strong></p><p>在合适位置新建一个文件夹来存放你的网站文件</p><p><img src="https://ae01.alicdn.com/kf/H73746586dec745189fafcce86ed4314bn.png" alt="Windows安装截图"></p><p>在新建的文件夹里鼠标右键唤出菜单选择</p><p><img src="https://ae01.alicdn.com/kf/H4c060a7497494b9d9e86f4015816d518s.png" alt="Windows安装截图"></p><p>安装npm淘宝镜像</p><p><code>$ npm install -g cnpm --registry=https://registry.npmmirror.com</code></p><p><img src="https://ae01.alicdn.com/kf/H952070e1b43c410088353a8c68ee0e73T.png" alt="运行结果示例"></p><p>升级npm版本</p><p><code>npm install -g npm@8.4.1</code></p><p><img src="https://ae01.alicdn.com/kf/H9850e3e3899548ed953991b8600034d6U.png" alt="运行结果示例"></p><p>绑定GitHub账户</p><p>本地设置用户名和链接远程账户</p><p><code>git config --global user.email&quot;你的Github邮箱&quot;</code></p><p>例如</p><p><code>git config --global user.email&quot;123@123.com&quot;</code></p><p>配置密钥</p><p><code>ssh-keygen -t rsa -C &quot;你的Github邮箱&quot;</code></p><p>按照提示找到生成的密钥文件</p><p><img src="https://ae01.alicdn.com/kf/H8bcb63b8f6d24f61b1f8fd3e2d030ed2u.png" alt="运行结果示例"></p><p>打开id_rsa.pub,复制里面的key。里面的key是一对看不懂的字符数字组合，不用管他，直接复制；回到github网站，进入Account Settings，左边选择SSH Keys，Add SSH Key。然后把复制的数字粘贴进去。</p><p><img src="https://ae01.alicdn.com/kf/H658b277f79c94295a5e54cd999ee95ddg.png" alt="运行结果示例"></p><p><img src="https://ae01.alicdn.com/kf/H5b0d3d6dac3440e98feadbafab7422bep.png" alt="SSH密钥绑定"></p><p><img src="https://ae01.alicdn.com/kf/H9816c6cf706a4c048a8d3db7cac04201T.png" alt="SSH密钥绑定"></p><p><img src="https://ae01.alicdn.com/kf/Hbbdddda96078422391486e06001585d26.png" alt="ssh密钥绑定"></p><p><img src="https://ae01.alicdn.com/kf/H38460b14b3594f64ad3da02154ba7f328.png" alt="ssh密钥绑定"></p><p>验证是否成功，在git bash下输入</p><p><img src="https://ae01.alicdn.com/kf/Hc6d897a201634b45ab3380350310cf692.png" alt="ssh密钥绑定"></p><h4 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h4><p>hexo官网 <a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p><p>在刚刚新建的文件夹里点击鼠标右键，选择git bash here</p><p><img src="https://ae01.alicdn.com/kf/Hf3da84a5cf9b42b4ab83f9aef68772b8L.png" alt="hexo安装"></p><p>运行以下命令</p><p><code>$ npm install hexo-cli -g</code></p><p><img src="https://ae01.alicdn.com/kf/Hbaf9bac47da54dedb32fbf4c3319ef44L.png" alt="运行结果"></p><hr><p><strong>至此hexo已经安装完成</strong></p><hr><h4 id="Hexo的使用"><a href="#Hexo的使用" class="headerlink" title="Hexo的使用"></a>Hexo的使用</h4><p>Hexo已经安装完成，但刚刚新建的文件夹里还没有生成任何文件。现在，开始让Hexo在这个文件夹里生成一个网站</p><p><code>$ hexo init</code></p><p><img src="https://ae01.alicdn.com/kf/H1510925f307543f7a74d7c26e5f041bcM.png" alt="运行结果"></p><p>此时，这个文件夹里已经装好了你的网站配置文件</p><p><img src="https://ae01.alicdn.com/kf/H6dc4bc81118f419a98b45d05cd8e616cI.png" alt="运行结果"></p><h4 id="用Hexo生成网页"><a href="#用Hexo生成网页" class="headerlink" title="用Hexo生成网页"></a>用Hexo生成网页</h4><p>执行命令</p><p><code>hexo g</code></p><p><img src="https://ae01.alicdn.com/kf/H6fff6b68020440d7bae499c8c0b966fcg.png" alt="运行结果"></p><h4 id="预览新生成的网站"><a href="#预览新生成的网站" class="headerlink" title="预览新生成的网站"></a>预览新生成的网站</h4><p>执行命令</p><p><code>hexo s</code></p><p><img src="https://ae01.alicdn.com/kf/H62cb908da2334dc589acfe638a27d921H.png" alt="运行结果"></p><p>访问提示的网址，可以看见网站已经成功生成</p><p><img src="https://ae01.alicdn.com/kf/Hc8da3fc4a1b64b69b345420931f745a0k.png" alt="网站截图"></p><hr><p>至此网站已经成功在本地生成，接下来实现将生成的文件上传到Github让所有人都可以看到</p><hr><h4 id="绑定Github静态页面仓库"><a href="#绑定Github静态页面仓库" class="headerlink" title="绑定Github静态页面仓库"></a>绑定Github静态页面仓库</h4><p>进入你的已经打开GitHub pages的仓库，复制仓库地址</p><p><img src="https://ae01.alicdn.com/kf/H6b2f19e9f1254466a2163b22ad5a86ebd.png" alt="123"></p><p>打开刚刚新建的文件夹，找到这个yml文件</p><p><img src="https://ae01.alicdn.com/kf/He9f8f3c98f4b4b3a93e872ac971470ddd.png" alt="yml修改"></p><p>将<strong>104行</strong>之后的修改</p><p>修改前</p><p><img src="https://ae01.alicdn.com/kf/H3efd4fad9e25494282d371eec7a9ed9c7.png" alt="yml修改前"></p><p><strong>修改后</strong></p><p><img src="https://ae01.alicdn.com/kf/Hd8c6982dfb544cef9902bfe2e9080ab2O.png" alt="yml修改后"></p><p>最后保存,至此仓库已经绑定完成。</p><h5 id="将网站同步到github"><a href="#将网站同步到github" class="headerlink" title="将网站同步到github"></a>将网站同步到github</h5><p>在存放网站的文件夹里打开git bash</p><p>运行以下命令</p><p><code>hexo d</code></p><p>等待上传成功，如果上传失败多运行几次上面的命令</p><hr><p>访问 你的github用户名.github.io 即可看到你的网站</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 经验分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
