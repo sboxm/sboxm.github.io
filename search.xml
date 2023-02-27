@@ -27,7 +27,7 @@
       <link href="/2022/06/27/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86C%E7%9B%98%E5%B7%A5%E5%85%B7-SpaceSniffer/"/>
       <url>/2022/06/27/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86C%E7%9B%98%E5%B7%A5%E5%85%B7-SpaceSniffer/</url>
       
-        <content type="html"><![CDATA[<div style="margin: 0 auto;text-align: center;"><h1>手动清理C盘工具-SpaceSniffer</h1></div><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><style type="text/css">            p{                font-size: 20px;            }</style><p>SpaceSniffer是Windows上一款以块状树平铺直观展现磁盘空间占用情况的软件，使用简单，功能直击痛点，而且大小仅2.20MB。</p><p>由于是绿色软件，下载解压后无需安装，点击SpaceSniffer.exe即可运行</p><p><a href="http://www.uderzo.it/main_products/space_sniffer/" style="font-size: 40px">SpaceSniffer官网</a><br /></p><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><hr>]]></content>
+        <content type="html"><![CDATA[<div style="margin: 0 auto;text-align: center;"><h1>手动清理C盘工具-SpaceSniffer</h1></div><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><style type="text/css">            p{                font-size: 20px;            }            #buttonurl{                display: block;                  margin-top: 14px;                width: 200px;                height: 49px;                  background-color: var(--btn-bg);                  color: white !important;                  text-align: center;                  line-height: 2.4;            }</style><p>SpaceSniffer是Windows上一款以块状树平铺直观展现磁盘空间占用情况的软件，使用简单，功能直击痛点，而且大小仅2.20MB。</p><p>由于是绿色软件，下载解压后无需安装，点击SpaceSniffer.exe即可运行</p><p><a id="buttonurl" target="_blank" rel="noopener" href="http://www.uderzo.it/main_products/space_sniffer/">SpaceSniffer官网</a></p><hr>]]></content>
       
       
       
