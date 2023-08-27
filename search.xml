@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>BeeAI-必应AI镜像</title>
-      <link href="/2023/06/16/BeeAI-%E5%BF%85%E5%BA%94AI%E9%95%9C%E5%83%8F/"/>
-      <url>/2023/06/16/BeeAI-%E5%BF%85%E5%BA%94AI%E9%95%9C%E5%83%8F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="BeeAI-必应AI镜像"><a href="#BeeAI-必应AI镜像" class="headerlink" title="BeeAI-必应AI镜像"></a>BeeAI-必应AI镜像</h1><p><img src="https://cdnjson.com/images/2023/06/16/30616184330.jpg" alt="主图"><br>用cloudflare加vercel建了一个必应AI镜像，在开源项目<a href="https://github.com/adams549659584/go-proxy-bingai">https://github.com/adams549659584/go-proxy-bingai</a>  的基础上进行了一些修改</p><h2 id="现有功能"><a href="#现有功能" class="headerlink" title="现有功能"></a>现有功能</h2><ul><li>😍AI 聊天</li><li>😍文章撰写</li><li>😍图像创建（需先设置用户）</li></ul><h2 id="使用地址"><a href="#使用地址" class="headerlink" title="使用地址"></a>使用地址</h2><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a href="https://chat.sboxm.eu.org/">https://chat.sboxm.eu.org/</a></p><h3 id="直接进入"><a href="#直接进入" class="headerlink" title="直接进入"></a>直接进入</h3><p>入口在本站的百宝箱中<br><img src="https://cdnjson.com/images/2023/06/16/616185004.jpg" alt="616185004.jpg"></p><h2 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h2><h3 id="切换聊天服务器"><a href="#切换聊天服务器" class="headerlink" title="切换聊天服务器"></a>切换聊天服务器</h3><p>聊天服务器可在右上角 设置 &#x3D;&gt; 服务选择 中切换<br><img src="https://cdnjson.com/images/2023/06/16/616185343.jpg" alt="616185343.jpg"></p><h3 id="使用开源-ChatGPT-提示词库"><a href="#使用开源-ChatGPT-提示词库" class="headerlink" title="使用开源 ChatGPT 提示词库"></a>使用开源 ChatGPT 提示词库</h3><p>聊天服务器可在右上角 设置 &#x3D;&gt; 提示词库 中下载，在聊天框中输入“&#x2F;”触发提示词</p><p><img src="https://cdnjson.com/images/2023/06/16/185447.jpg" alt="185447.jpg"></p><h3 id="设置用户"><a href="#设置用户" class="headerlink" title="设置用户"></a>设置用户</h3><p>体验完整功能需要设置用户</p><ul><li><p>访问 <a href="https://www.bing.com/">https://www.bing.com/</a> 或 <a href="https://cn.bing.com/">https://cn.bing.com/</a> ，登录</p></li><li><p>F12 或 Ctrl + Shift + I 打开控制台<br><img src="https://cdnjson.com/images/2023/06/16/bing-cookie.png" alt="bing-cookie.png"></p></li><li><p>拿到 Cookie 中 _U 的值 后，在网站设置 &#x3D;&gt; 设置用户 中填入即可。</p></li></ul><p><a href="">已知用直接用手机号注册的微软账号无法使用</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 百宝箱 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>正方教务爬虫</title>
       <link href="/2023/03/24/%E6%AD%A3%E6%96%B9%E6%95%99%E5%8A%A1%E7%88%AC%E8%99%AB/"/>
       <url>/2023/03/24/%E6%AD%A3%E6%96%B9%E6%95%99%E5%8A%A1%E7%88%AC%E8%99%AB/</url>
