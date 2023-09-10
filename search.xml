@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>查询助手使用文档</title>
+      <link href="/2023/09/09/%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"/>
+      <url>/2023/09/09/%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
+      
+        <content type="html"><![CDATA[<div id="title_style">    <h1>查询助手使用文档</h1></div><a class="welcome">欢迎</a><h2 id="目前文档仍在陆续完善中！"><a href="#目前文档仍在陆续完善中！" class="headerlink" title="目前文档仍在陆续完善中！"></a>目前文档仍在陆续完善中！</h2><hr><h1 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h1><h2 id="查询助手是什么"><a href="#查询助手是什么" class="headerlink" title="查询助手是什么?"></a>查询助手是什么?</h2><p>查询助手（英文名称：QueryHelper）可以让您便捷的查询成绩。QueryHelper使用Fast API开发，由网页端和客户端驱动组成，所有数据运算均在客户端完成,无需将用户的账号密码等个人信息上传云端，大大降低用户个人信息泄露的风险和远程服务器开销。<br>QueryHelper具有无人值守功能，可以在目标服务器超载时实现无人值守等待响应，自动识别验证码，失败自动重试等。</p><h2 id="问题反馈"><a href="#问题反馈" class="headerlink" title="问题反馈"></a>问题反馈</h2><p>如果在使用过程中发现了什么缺陷，或是有新的需求提议，请先检查一下以前的文档、issue 是否提过。<br>如果疑似 Bug 或是功能提议，请创建一个 issue 用于追踪问题；<br>Github开源地址：<a href="https://github.com/cnhkbbs/QueryHelper">https://github.com/cnhkbbs/QueryHelper</a></p><h2 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h2><p>开发者Email: <a href="mailto:&#109;&#x61;&#105;&#x6c;&#64;&#x73;&#x62;&#111;&#x78;&#x6d;&#x2e;&#101;&#117;&#x2e;&#x6f;&#x72;&#103;">&#109;&#x61;&#105;&#x6c;&#64;&#x73;&#x62;&#111;&#x78;&#x6d;&#x2e;&#101;&#117;&#x2e;&#x6f;&#x72;&#103;</a></p><hr><h1 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h1><h2 id="获取QueryHelper"><a href="#获取QueryHelper" class="headerlink" title="获取QueryHelper"></a>获取QueryHelper</h2><p>QueryHelper由网页端和驱动程序端两部分组成<br>你可以在<a href="https://github.com/cnhkbbs/QueryHelper/release">GIthub Release</a> 页面获取已经构建打包完成的驱动程序.<br>或是从<a href="https://sboxm.lanzoub.com/b019iflqb">蓝奏云</a> <a href="https://sboxm.lanzoub.com/b019iflqb">https://sboxm.lanzoub.com/b019iflqb</a>  密码:bvvy 下载驱动程序</p><p>如果想要自行从源代码构建，请参阅以下章节：<br><a href="#%E6%9E%84%E5%BB%BA">构建</a></p><hr><h1 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h1><p>QueryHelper项目主要由两部分组成：驱动主仓库<a href="https://github.com/cnhkbbs/QueryHelper">QueryHelper</a>,以及前端仓库<a href="https://github.com/cnhkbbs/staticcdn/tree/main/QueryHelper">staticcdn&#x2F;QueryHelper</a></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><style>    .welcome{        font-size: 50px;        text-decoration: none !important;        color: black !important;    }    #title_style{        margin: 0 auto;        text-align: center;    }</style>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 文档 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>正方教务爬虫</title>
       <link href="/2023/03/24/%E6%AD%A3%E6%96%B9%E6%95%99%E5%8A%A1%E7%88%AC%E8%99%AB/"/>
       <url>/2023/03/24/%E6%AD%A3%E6%96%B9%E6%95%99%E5%8A%A1%E7%88%AC%E8%99%AB/</url>
