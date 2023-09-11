@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>《Hello算法》学习资源分享</title>
+      <link href="/2023/09/11/%E3%80%8AHello%E7%AE%97%E6%B3%95%E3%80%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+      <url>/2023/09/11/%E3%80%8AHello%E7%AE%97%E6%B3%95%E3%80%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="《Hello算法》学习资源分享"><a href="#《Hello算法》学习资源分享" class="headerlink" title="《Hello算法》学习资源分享"></a>《Hello算法》学习资源分享</h1><p>《Hello 算法》是一本开源免费、新手友好的数据结构与算法入门书。由力扣上剑指offer题解大神k神编写。</p><ul><li>全书采用动画图解，内容清晰易懂、学习曲线平滑，引导初学者探索数据结构与算法的知识地图。</li><li>源代码可一键运行，帮助读者在练习中提升编程技能，了解算法工作原理和数据结构底层实现。</li><li>鼓励读者互助学习，提问与评论通常可在两日内得到回复。</li></ul><p>前往代码仓 &gt; <a href="https://github.com/krahets/hello-algo">https://github.com/krahets/hello-algo</a></p><p>前往网页版 &gt; <a href="https://www.hello-algo.com/">https://www.hello-algo.com</a></p><p>前往下载 PDF &gt; <a href="https://github.com/krahets/hello-algo/releases">https://github.com/krahets/hello-algo/releases</a></p><h1 id="推荐语"><a href="#推荐语" class="headerlink" title="推荐语"></a>推荐语</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">“一本通俗易懂的数据结构与算法入门书，引导读者手脑并用地学习，强烈推荐算法初学者阅读。”</span><br><span class="line"></span><br><span class="line">—— 邓俊辉，清华大学计算机系教授</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">“如果我当年学数据结构与算法的时候有《Hello 算法》，学起来应该会简单 10 倍！”</span><br><span class="line"></span><br><span class="line">—— 李沐，亚马逊资深首席科学家</span><br></pre></td></tr></table></figure><hr><p>部分内容摘自：<br><a href="https://github.com/krahets/hello-algo/blob/main/README.md">https://github.com/krahets/hello-algo/blob/main/README.md</a></p><p><a href="https://www.bilibili.com/read/cv26457908/?spm_id_from=333.999.0.0">https://www.bilibili.com/read/cv26457908/?spm_id_from=333.999.0.0</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 资源分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>查询助手使用文档</title>
       <link href="/2023/09/09/%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"/>
       <url>/2023/09/09/%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
