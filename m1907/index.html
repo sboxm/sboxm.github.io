@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>m1907</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 3.5em;
+      color: #2c3e50;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 0.5em;
+      color: #7f8c8d;
+      margin-bottom: 1.5em;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+	  margin-top: 5px;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+
+    iframe {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container" id="searchContainer">
+  <h1>m1907</h1>
+  <h2>水印广告是视频自带, 切勿相信或访问视频中的任何链接!!!</h2>
+  <input type="text" id="searchInput" placeholder="输入视频名称或链接地址">
+  <button onclick="search()">搜索</button>
+  <p class="error" id="errorMessage"></p>
+</div>
+
+<iframe frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="myIframe"></iframe>
+
+<script>
+  function g(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = encodeURI(window.location.search).substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return '';
+  };
+
+  function search() {
+    let searchTerm = document.getElementById("searchInput").value;
+    let errorMessage = document.getElementById("errorMessage");
+    let searchContainer = document.getElementById("searchContainer");
+    let myIframe = document.getElementById("myIframe");
+
+    if (searchTerm.trim() === "") {
+      errorMessage.textContent = "请输入搜索内容";
+    } else {
+      errorMessage.textContent = "";
+      let name = searchTerm;
+      myIframe.src = `https://z1.m1907.top/?jx=${name}`;
+      searchContainer.style.display = "none";
+      myIframe.style.display = "block";
+    }
+  }
+</script>
+</body>
+</html>
