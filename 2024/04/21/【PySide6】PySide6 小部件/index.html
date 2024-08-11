@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【PySide6】PySide6 小部件 | SBOXM</title><meta name="author" content="SBOXM"><meta name="copyright" content="SBOXM"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="【PySide6】PySide6 小部件     使用QPushButton, QCheckBox, QComboBox, QLabel, 和 QSlider 小部件        原文信息：《PySide6 Widgets》     原作者：Martin Fitzpatrick     出处：https:&#x2F;&#x2F;www.pythonguis.com&#x2F;tutorials&#x2F;pyside6-wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【PySide6】PySide6 小部件">
+<meta property="og:url" content="https://blog.sboxm.top/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/index.html">
+<meta property="og:site_name" content="SBOXM">
+<meta property="og:description" content="【PySide6】PySide6 小部件     使用QPushButton, QCheckBox, QComboBox, QLabel, 和 QSlider 小部件        原文信息：《PySide6 Widgets》     原作者：Martin Fitzpatrick     出处：https:&#x2F;&#x2F;www.pythonguis.com&#x2F;tutorials&#x2F;pyside6-wi">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png">
+<meta property="article:published_time" content="2024-04-21T07:24:36.000Z">
+<meta property="article:modified_time" content="2024-08-11T03:42:28.119Z">
+<meta property="article:author" content="SBOXM">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.sboxm.top/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/index.html"><link rel="preconnect"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css?v=6.5.1"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.css?v=5.0.33" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js?v=4.11.1',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【PySide6】PySide6 小部件',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-08-11 11:42:28'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.sboxm.eu.org/hexo/pace.css"/><script src="/pluginsSrc/pace-js/pace.min.js?v=1.2.4"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/04/17/1924a1db1b45681b1e52e5d9e7c8c49e.jpg" onerror="onerror=null;src='https://cdnjson.com/images/2023/04/11/dribbble_1.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 百宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://chat.sboxm.top"><i class="fa-fw fas fa-robot"></i><span> NextChat</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://app.diagrams.net/"><i class="fa-fw fas fa-folder-open"></i><span> 在线流程图</span></a></li><li><a class="site-page child" href="/m1907/"><i class="fa-fw fa fa-film"></i><span> m1907</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://stats.uptimerobot.com/w5NQDCvWJE"><i class="fa-fw fa-tags"></i><span> Status</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png')"><nav id="nav"><span id="blog-info"><a href="/" title="SBOXM"><span class="site-name">SBOXM</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 百宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://chat.sboxm.top"><i class="fa-fw fas fa-robot"></i><span> NextChat</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://app.diagrams.net/"><i class="fa-fw fas fa-folder-open"></i><span> 在线流程图</span></a></li><li><a class="site-page child" href="/m1907/"><i class="fa-fw fa fa-film"></i><span> m1907</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://stats.uptimerobot.com/w5NQDCvWJE"><i class="fa-fw fa-tags"></i><span> Status</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【PySide6】PySide6 小部件</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-04-21T07:24:36.000Z" title="Created 2024-04-21 15:24:36">2024-04-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-08-11T03:42:28.119Z" title="Updated 2024-08-11 11:42:28">2024-08-11</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div id="title-style">
+    <h1>【PySide6】PySide6 小部件</h1>
+    <p>使用QPushButton, QCheckBox, QComboBox, QLabel, 和 QSlider 小部件</p>
+</div>
+
+<p class="admonition admonition-tip"><span class="admonition-kind"><i class="fas fa-lightbulb"></i></span>
+    <b>原文信息：《PySide6 Widgets》</b><br />
+    <b>原作者：Martin Fitzpatrick</b><br />
+    <b>出处：<a href="https://www.pythonguis.com/tutorials/pyside6-widgets/" target="blank">https://www.pythonguis.com/tutorials/pyside6-widgets/</a></b><br />
+    <b>免责声明：本翻译内容仅代表翻译者的个人观点与理解，原作者对此翻译版本并未进行认可，翻译过程中可能存在误差，读者应自行核实原文内容。</b>
+</p>
+
+<p>在Qt(和大多数用户界面)中，<strong>widget</strong>是用户可以与之交互的UI组件的名称。用户界面由多个小部件组成，排列在窗口内。</p>
+<p>Qt提供了大量可用的小部件，甚至允许您创建自己的自定义和自定义小部件。</p>
+<h1 id="快速演示-PySide6-Widgets"><a href="#快速演示-PySide6-Widgets" class="headerlink" title="快速演示:PySide6 Widgets"></a>快速演示:PySide6 Widgets</h1><p>首先，让我们来看一些最常见的 PySide 控件。以下代码创建了一系列 PySide 控件，并将它们添加到窗口布局中，以便你能一起看到它们： </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PySide6.QtWidgets <span class="keyword">import</span> (</span><br><span class="line">    QApplication,</span><br><span class="line">    QCheckBox,</span><br><span class="line">    QComboBox,</span><br><span class="line">    QDateEdit,</span><br><span class="line">    QDateTimeEdit,</span><br><span class="line">    QDial,</span><br><span class="line">    QDoubleSpinBox,</span><br><span class="line">    QFontComboBox,</span><br><span class="line">    QLabel,</span><br><span class="line">    QLCDNumber,</span><br><span class="line">    QLineEdit,</span><br><span class="line">    QMainWindow,</span><br><span class="line">    QProgressBar,</span><br><span class="line">    QPushButton,</span><br><span class="line">    QRadioButton,</span><br><span class="line">    QSlider,</span><br><span class="line">    QSpinBox,</span><br><span class="line">    QTimeEdit,</span><br><span class="line">    QVBoxLayout,</span><br><span class="line">    QWidget,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MainWindow</span>(<span class="title class_ inherited__">QMainWindow</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line">        self.setWindowTitle(<span class="string">&quot;Widgets App&quot;</span>)</span><br><span class="line"></span><br><span class="line">        layout = QVBoxLayout()</span><br><span class="line">        widgets = [</span><br><span class="line">            QCheckBox,</span><br><span class="line">            QComboBox,</span><br><span class="line">            QDateEdit,</span><br><span class="line">            QDateTimeEdit,</span><br><span class="line">            QDial,</span><br><span class="line">            QDoubleSpinBox,</span><br><span class="line">            QFontComboBox,</span><br><span class="line">            QLCDNumber,</span><br><span class="line">            QLabel,</span><br><span class="line">            QLineEdit,</span><br><span class="line">            QProgressBar,</span><br><span class="line">            QPushButton,</span><br><span class="line">            QRadioButton,</span><br><span class="line">            QSlider,</span><br><span class="line">            QSpinBox,</span><br><span class="line">            QTimeEdit,</span><br><span class="line">        ]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> widget <span class="keyword">in</span> widgets:</span><br><span class="line">            layout.addWidget(widget())</span><br><span class="line"></span><br><span class="line">        central_widget = QWidget()</span><br><span class="line">        central_widget.setLayout(layout)</span><br><span class="line"></span><br><span class="line">        self.setCentralWidget(central_widget)</span><br><span class="line"></span><br><span class="line">app = QApplication(sys.argv)</span><br><span class="line">window = MainWindow()</span><br><span class="line">window.show()</span><br><span class="line">app.<span class="built_in">exec</span>()</span><br></pre></td></tr></table></figure>
+<p class="admonition admonition-run"><span class="admonition-kind"><i class="fas fa-rocket"></i></span> <em>运行这段代码!</em> 你将看到一个窗口出现，其中包含我们创建的所有小部件。</p>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdnjson.com/images/2024/08/07/widgets-list.webp" alt="widgets-list.webp"></p>
+<p>让我们从上到下看一下所有的示例小部件:</p>
+<table>
+<thead>
+<tr>
+<th>Widget</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>QCheckbox</code></td>
+<td>一个复选框</td>
+</tr>
+<tr>
+<td><code>QComboBox</code></td>
+<td>下拉列表框</td>
+</tr>
+<tr>
+<td><code>QDateEdit</code></td>
+<td>用于编辑日期和时间</td>
+</tr>
+<tr>
+<td><code>QDateTimeEdit</code></td>
+<td>用于编辑日期和时间</td>
+</tr>
+<tr>
+<td><code>QDial</code></td>
+<td>可旋转的刻度盘</td>
+</tr>
+<tr>
+<td><code>QDoubleSpinBox</code></td>
+<td>用于浮点数的选择器</td>
+</tr>
+<tr>
+<td><code>QFontComboBox</code></td>
+<td>字体列表</td>
+</tr>
+<tr>
+<td><code>QLCDNumber</code></td>
+<td>一个不太美观的 LCD 显示</td>
+</tr>
+<tr>
+<td><code>QLabel</code></td>
+<td>仅是一个标签，非交互式</td>
+</tr>
+<tr>
+<td><code>QLineEdit</code></td>
+<td>输入一行文本</td>
+</tr>
+<tr>
+<td><code>QProgressBar</code></td>
+<td>进度条</td>
+</tr>
+<tr>
+<td><code>QPushButton</code></td>
+<td>按钮</td>
+</tr>
+<tr>
+<td><code>QRadioButton</code></td>
+<td>单选按钮组，仅一项可选</td>
+</tr>
+<tr>
+<td><code>QSlider</code></td>
+<td>滑动条</td>
+</tr>
+<tr>
+<td><code>QSpinBox</code></td>
+<td>整数选择器</td>
+</tr>
+<tr>
+<td><code>QTimeEdit</code></td>
+<td>用于编辑时间</td>
+</tr>
+</tbody></table>
+<p>还有更多的小部件，但它们不太适合!您可以通过检查Qt文档来查看它们。</p>
+<p>接下来，我们将逐步了解一些最常用的小部件，并更详细地研究它们。为了试验这些小部件，我们需要一个简单的应用程序来放置它们。将下面的代码保存到一个名为<code>app.py</code>的文件中，并运行它以确保它正常工作:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PySide6.QtCore <span class="keyword">import</span> Qt</span><br><span class="line"><span class="keyword">from</span> PySide6.QtWidgets <span class="keyword">import</span> (</span><br><span class="line">    QApplication,</span><br><span class="line">    QCheckBox,</span><br><span class="line">    QComboBox,</span><br><span class="line">    QDial,</span><br><span class="line">    QDoubleSpinBox,</span><br><span class="line">    QLabel,</span><br><span class="line">    QLineEdit,</span><br><span class="line">    QListWidget,</span><br><span class="line">    QMainWindow,</span><br><span class="line">    QSlider,</span><br><span class="line">    QSpinBox,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MainWindow</span>(<span class="title class_ inherited__">QMainWindow</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>(MainWindow, self).__init__()</span><br><span class="line"></span><br><span class="line">        self.setWindowTitle(<span class="string">&quot;My App&quot;</span>)</span><br><span class="line"></span><br><span class="line">app = QApplication(sys.argv)</span><br><span class="line">window = MainWindow()</span><br><span class="line">window.show()</span><br><span class="line">app.<span class="built_in">exec</span>()</span><br></pre></td></tr></table></figure>
+<p>在上面的代码中，我们导入了许多Qt小部件。现在，我们将依次遍历这些小部件，将它们添加到我们的应用程序中，并查看它们的行为。</p>
+<h2 id="QLabel"><a href="#QLabel" class="headerlink" title="QLabel"></a>QLabel</h2><p>我们将从<code>QLabel</code>开始，它可以说是Qt工具箱中最简单的部件之一。这是一个简单的单行文本，您可以在应用程序中定位它。你可以在创建文本时通过传入一个<code>str</code>来设置文本:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">label = QLabel(<span class="string">&quot;Hello&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>或是使用 .setText() 函数:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">label_1 = QLabel(<span class="string">&quot;1&quot;</span>)  <span class="comment"># 标签创建时的内容是数字 1.</span></span><br><span class="line">label_2.setText(<span class="string">&quot;2&quot;</span>)   <span class="comment"># 标签现在显示的内容是数字 2.</span></span><br></pre></td></tr></table></figure>
+<p>您还可以调整字体参数，例如字体大小或小部件中文本的对齐方式:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MainWindow</span>(<span class="title class_ inherited__">QMainWindow</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>(MainWindow, self).__init__()</span><br><span class="line"></span><br><span class="line">        self.setWindowTitle(<span class="string">&quot;My App&quot;</span>)</span><br><span class="line"></span><br><span class="line">        label = QLabel(<span class="string">&quot;Hello&quot;</span>)</span><br><span class="line">        font = label.font()</span><br><span class="line">        font.setPointSize(<span class="number">30</span>)</span><br><span class="line">        label.setFont(font)</span><br><span class="line">        label.setAlignment(</span><br><span class="line">            Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignVCenter</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        self.setCentralWidget(label)</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdnjson.com/images/2024/08/07/widgets1.webp" alt="widgets1.webp"></p>
+<p class="admonition admonition-tip"><span class="admonition-kind"><i class="fas fa-lightbulb"></i></span> <b>提示</b>:请注意，如果您想要更改小部件字体的属性，通常最好是获取当前字体，更新它，然后再应用它。这确保了字体面与桌面惯例保持一致。</p>
+
+
+<style>
+.admonition a {
+    color: #EB5160;
+    text-decoration: none;
+}
+
+.admonition {
+    position: relative;
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: #E9EBEF;
+    position: relative;
+    line-height: 1.8em;
+    border-radius: 5px;
+    border: 1px solid #D4D6DA;
+    margin: 2rem 0;
+}
+
+.admonition-kind {
+    opacity: 0.2;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.admonition-body {
+    margin-right: 2rem;
+}
+
+p.admonition {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Montserrat', 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+.admonition-note {
+    background-color: #FFFAED;
+    color: #b18f12;
+    border-color: #b18f12;
+}
+
+.admonition-tip {
+    background-color: #ECF1F6;
+    color: #376F9F;
+    border-color: #376F9F;
+}
+
+.admonition-warning {
+    background-color: #FBE9E7;
+    color: #FE4A49;
+    border-color: #FE4A49;
+}
+
+.admonition-ok {
+    background-color: #EEF7EF;
+    color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.admonition-challenge {
+    color: #3F51B5;
+}
+article img {
+    display: block;
+    float: none;
+    clear: both;
+    max-width: 80%;
+    height: auto;
+    margin: 3rem auto;
+}
+
+article img+em {
+    font-family: 'Poppins', 'Century Gothic', 'AppleGothic', sans-serif;
+    display: block;
+    width: 80%;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin: -2.5rem auto 3rem auto;
+    text-align: center;
+    color: #888;
+}
+#title-style{
+        margin: 0 auto;
+        text-align: center;
+    }
+p{
+    -webkit-text-size-adjust: 100%;
+    color: #111;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+</style>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://blog.sboxm.top">SBOXM</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://blog.sboxm.top/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/">https://blog.sboxm.top/2024/04/21/【PySide6】PySide6 小部件/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></div><div class="post_share"><div class="social-share" data-image="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="/pluginsSrc/butterfly-extsrc/sharejs/dist/css/share.min.css?v=1.1.3" media="print" onload="this.media='all'"><script src="/pluginsSrc/butterfly-extsrc/sharejs/dist/js/social-share.min.js?v=1.1.3" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/02/29/%E3%80%90PySide6%E3%80%91Pyside6%20%E4%BF%A1%E5%8F%B7%E3%80%81%E6%8F%92%E6%A7%BD%E5%92%8C%E4%BA%8B%E4%BB%B6/" title="【PySide6】Pyside6 信号、插槽和事件"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next</div><div class="next_info">【PySide6】Pyside6 信号、插槽和事件</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2024/02/21/%E3%80%90PySide6%E3%80%91%E4%BD%BF%E7%94%A8PySide6%E5%88%9B%E5%BB%BA%E6%82%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" title="【PySide6】使用PySide6创建您的第一个应用程序"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-21</div><div class="title">【PySide6】使用PySide6创建您的第一个应用程序</div></div></a></div><div><a href="/2024/02/29/%E3%80%90PySide6%E3%80%91Pyside6%20%E4%BF%A1%E5%8F%B7%E3%80%81%E6%8F%92%E6%A7%BD%E5%92%8C%E4%BA%8B%E4%BB%B6/" title="【PySide6】Pyside6 信号、插槽和事件"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-29</div><div class="title">【PySide6】Pyside6 信号、插槽和事件</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/04/17/1924a1db1b45681b1e52e5d9e7c8c49e.jpg" onerror="this.onerror=null;this.src='https://cdnjson.com/images/2023/04/11/dribbble_1.gif'" alt="avatar"/></div><div class="author-info__name">SBOXM</div><div class="author-info__description">一个小博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/cnhkbbs"><i class="fab fa-github"></i><span>Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">域名更改至sboxm.top</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#title-style"><span class="toc-number">1.</span> <span class="toc-text">【PySide6】PySide6 小部件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%BC%94%E7%A4%BA-PySide6-Widgets"><span class="toc-number">2.</span> <span class="toc-text">快速演示:PySide6 Widgets</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#QLabel"><span class="toc-number">2.1.</span> <span class="toc-text">QLabel</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/" title="【PySide6】PySide6 小部件"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【PySide6】PySide6 小部件"/></a><div class="content"><a class="title" href="/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/" title="【PySide6】PySide6 小部件">【PySide6】PySide6 小部件</a><time datetime="2024-04-21T07:24:36.000Z" title="Created 2024-04-21 15:24:36">2024-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/02/29/%E3%80%90PySide6%E3%80%91Pyside6%20%E4%BF%A1%E5%8F%B7%E3%80%81%E6%8F%92%E6%A7%BD%E5%92%8C%E4%BA%8B%E4%BB%B6/" title="【PySide6】Pyside6 信号、插槽和事件"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【PySide6】Pyside6 信号、插槽和事件"/></a><div class="content"><a class="title" href="/2024/02/29/%E3%80%90PySide6%E3%80%91Pyside6%20%E4%BF%A1%E5%8F%B7%E3%80%81%E6%8F%92%E6%A7%BD%E5%92%8C%E4%BA%8B%E4%BB%B6/" title="【PySide6】Pyside6 信号、插槽和事件">【PySide6】Pyside6 信号、插槽和事件</a><time datetime="2024-02-29T00:22:30.000Z" title="Created 2024-02-29 08:22:30">2024-02-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/02/21/%E3%80%90PySide6%E3%80%91%E4%BD%BF%E7%94%A8PySide6%E5%88%9B%E5%BB%BA%E6%82%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" title="【PySide6】使用PySide6创建您的第一个应用程序"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloudflare.cdnjson.com/images/2024/02/21/b4b70c5f05f0e112adadcb082925a312819fb9375bb6ac7d90da2f49.md.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【PySide6】使用PySide6创建您的第一个应用程序"/></a><div class="content"><a class="title" href="/2024/02/21/%E3%80%90PySide6%E3%80%91%E4%BD%BF%E7%94%A8PySide6%E5%88%9B%E5%BB%BA%E6%82%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" title="【PySide6】使用PySide6创建您的第一个应用程序">【PySide6】使用PySide6创建您的第一个应用程序</a><time datetime="2024-02-21T07:24:36.000Z" title="Created 2024-02-21 15:24:36">2024-02-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/11/%E3%80%8AHello%E7%AE%97%E6%B3%95%E3%80%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" title="《Hello算法》"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdnjson.com/images/2023/09/11/85551.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《Hello算法》"/></a><div class="content"><a class="title" href="/2023/09/11/%E3%80%8AHello%E7%AE%97%E6%B3%95%E3%80%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" title="《Hello算法》">《Hello算法》</a><time datetime="2023-09-11T10:55:12.000Z" title="Created 2023-09-11 18:55:12">2023-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/09/%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/" title="查询助手使用文档"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdnjson.com/images/2023/09/10/4732.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="查询助手使用文档"/></a><div class="content"><a class="title" href="/2023/09/09/%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/" title="查询助手使用文档">查询助手使用文档</a><time datetime="2023-09-09T10:13:28.000Z" title="Created 2023-09-09 18:13:28">2023-09-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By SBOXM</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.umd.js?v=5.0.33"></script><script src="/pluginsSrc/instant.page/instantpage.js?v=5.2.0" type="module"></script><script src="/pluginsSrc/vanilla-lazyload/dist/lazyload.iife.min.js?v=17.8.8"></script><div class="js-pjax"></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-11PS3ZZG5C"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-11PS3ZZG5C');</script><script src="https://cdn.sboxm.eu.org/fkQW/fkQW.js"></script><script src="https://cdn.sboxm.eu.org/showFPS/showFPS.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
