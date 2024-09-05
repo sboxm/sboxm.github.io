@@ -42,6 +42,25 @@
     
     
     <entry>
+      <title>《Real-Time-Rendering-4th》</title>
+      <link href="/2024/08/26/%E3%80%8AReal-Time-Rendering-4th%E3%80%8B/"/>
+      <url>/2024/08/26/%E3%80%8AReal-Time-Rendering-4th%E3%80%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="《实时渲染》第四版"><a href="#《实时渲染》第四版" class="headerlink" title="《实时渲染》第四版"></a>《实时渲染》第四版</h1><h3 id="Real-Time-Rendering-4th-Edition"><a href="#Real-Time-Rendering-4th-Edition" class="headerlink" title="Real-Time Rendering, 4th Edition"></a>Real-Time Rendering, 4th Edition</h3><ol><li><p><strong>概述</strong></p><ul><li>《Real-Time Rendering》（实时渲染）由Thomas Pharr, James Ferwerda, and Ingo Wald共同编辑，是计算机图形学领域中的一本经典教材。</li><li>第四版于2019年发布，包含了对现代GPU架构和技术的新理解，以及对游戏、虚拟现实、增强现实等领域的最新应用探讨。</li></ul></li><li><p><strong>内容结构</strong></p><ul><li>本书分为多个章节，每个章节深入讨论实时渲染中的一个特定方面，如光线追踪、阴影、纹理映射、光照模型、物理基础、着色语言等。</li><li>包括理论知识和实践案例研究，适合初学者到高级开发者学习。</li></ul></li><li><p><strong>技术覆盖</strong></p><ul><li>介绍了多种渲染算法和技术，比如延迟渲染、屏幕空间反射、环境光遮蔽等。</li><li>讨论了硬件加速方法，包括GPU编程技巧和多线程渲染策略。</li><li>探讨了未来可能的技术方向，如基于物理的渲染（PBR）、全局光照模拟等。</li></ul></li></ol><p>源文件仓库 &gt; <a href="https://github.com/Morakito/Real-Time-Rendering-4th-CN">https://github.com/Morakito/Real-Time-Rendering-4th-CN</a></p><p>在线阅读 &gt; <a href="https://www.wolai.com/dpaCHvw9WZRaB3aM2BzF9j">https://www.wolai.com/dpaCHvw9WZRaB3aM2BzF9j</a></p><p>前往下载 PDF (蓝奏搬运) &gt; <a href="https://sboxm.lanzoue.com/b0knde09a">https://sboxm.lanzoue.com/b0knde09a</a>  密码：1234</p><p>前往下载 PDF (Github) &gt; <a href="https://github.com/Morakito/Real-Time-Rendering-4th-CN/releases">https://github.com/Morakito/Real-Time-Rendering-4th-CN/releases</a></p><ul><li>在线网站：<a href="https://www.realtimerendering.com/">https://www.realtimerendering.com</a></li><li>勘误网站：<a href="https://www.realtimerendering.com/corrigenda.html">https://www.realtimerendering.com/corrigenda.html</a></li><li>参考文件网站：<a href="https://www.realtimerendering.com/refs.html">https://www.realtimerendering.com/refs.html</a></li><li>参考文献合集仓库：<a href="https://github.com/QianMo/Real-Time-Rendering-4th-Bibliography-Collection">https://github.com/QianMo/Real-Time-Rendering-4th-Bibliography-Collection</a></li><li>wolai文件：<a href="https://www.wolai.com/fkGSwxLu2pjWD7kiBY1V7W">https://www.wolai.com/fkGSwxLu2pjWD7kiBY1V7W</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 资源分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【PySide6】PySide6 小部件</title>
       <link href="/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/"/>
       <url>/2024/04/21/%E3%80%90PySide6%E3%80%91PySide6%20%E5%B0%8F%E9%83%A8%E4%BB%B6/</url>
