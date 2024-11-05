@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>【置顶】 私有云不再对外开放</title>
+      <title>【置顶】 置顶内容</title>
       <link href="/2099/01/01/%E3%80%90%E7%BD%AE%E9%A1%B6%E3%80%91/"/>
       <url>/2099/01/01/%E3%80%90%E7%BD%AE%E9%A1%B6%E3%80%91/</url>
       
-        <content type="html"><![CDATA[<h1 id="私有云不再对外开放"><a href="#私有云不再对外开放" class="headerlink" title="私有云不再对外开放"></a>私有云不再对外开放</h1><p>出于安全考虑，私有云(pan.no51.top)不再对外开放，如需访问请连接虚拟局域网。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="公共CDN"><a href="#公共CDN" class="headerlink" title="公共CDN"></a>公共CDN</h1><h2 id="地址迁移"><a href="#地址迁移" class="headerlink" title="地址迁移"></a>地址迁移</h2><p>由于 <code>fastly.jsdelivr.net</code> 的域名部分地区无法访问，已将部分项目公共CDN迁移至 <code>cdn.staticfile.net</code>.</p><p>一些仍依赖于 <code>fastly.jsdelivr.net</code> 的项目可能需要多次刷新尝试才可使用</p><h2 id="迁移记录"><a href="#迁移记录" class="headerlink" title="迁移记录"></a>迁移记录</h2><ul><li>2022年初 cdn.jsdelivr.net 牌照被撤销，迁移至 自建CDN</li><li>自建CDN 月流量超出100G限额 迁移至 fastly.jsdelivr.net</li><li>2024年末 fastly.jsdelivr.net 被DNS污染 迁移至 cdn.bootcdn.net</li><li>迁移至 cdn.bootcdn.net 当晚近半文件出现504超时  迁移至 cdn.staticfile.net</li></ul><h1 id="私有云不再对外开放"><a href="#私有云不再对外开放" class="headerlink" title="私有云不再对外开放"></a>私有云不再对外开放</h1><p>出于安全考虑，私有云(pan.no51.top)不再对外开放，如需访问请连接虚拟局域网。</p>]]></content>
       
       
       
