@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /about/
 Disallow: /m1907/
 Disallow: /categories/
 Disallow: /archives/
